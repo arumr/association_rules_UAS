@@ -17,7 +17,7 @@ item_sets, association_rules = apriori(baskets, min_support=0.01, min_confidence
 # print(df.head())
 
 
-st.title("Market Basket Analysis Menggunakan ALgoritma Apriori")
+st.title("Market Basket Analysis Menggunakan Algoritma Apriori")
 
 
 def user_input_features():
