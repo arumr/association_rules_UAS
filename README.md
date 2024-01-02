@@ -169,6 +169,7 @@ ax.yaxis.set_major_locator(mpl.ticker.FixedLocator([500, 1000, 1500]))
 
 _ = annotate_column_chart(ax)
 ```
+![Alt text](eda1.png)
 
 Lalu kita tampilkan diagram batang yang menunjukkan 15 produk yang paling sedikit terjual berdasarkan jumlah transaksi.
 ``` bash
@@ -178,8 +179,9 @@ ax.yaxis.set_major_locator(mpl.ticker.FixedLocator([10, 20, 30]))
 
 _ = annotate_column_chart(ax)
 ```
+![Alt text](eda2.png)
 
-Bisa kita lihat dalam diagram batang diatas, menunjukkan distribusi ukuran keranjang dalam data, diukur berdasarkan jumlah item dalam satu transaksi.
+Bisa kita lihat dalam diagram batang dibawah ini, menunjukkan distribusi ukuran keranjang dalam data, diukur berdasarkan jumlah item dalam satu transaksi.
 ``` bash
 basket_sizes = data.notna().apply(sum, axis=1)
 
@@ -191,6 +193,7 @@ ax.yaxis.set_major_locator(mpl.ticker.FixedLocator([500, 1000, 1500]))
 
 _ = annotate_column_chart(ax)
 ```
+![Alt text](eda3.png)
 
 Kita lihat juga diagram pie (pie chart) yang menunjukkan kemunculan produk dalam transaksi terbesar, dengan lebih dari 15 item.
 ``` bash
@@ -211,8 +214,9 @@ ax.set_title("Appearances in the Largest Transactions", size=20, pad=45)
 ax.set_ylabel("")
 ax.figure.tight_layout()
 ```
+![Alt text](eda4.png)
 
-Diatas adalah diagram batang yang memberikan informasi tentang jumlah kemunculan setiap produk dalam transaksi dengan hanya satu item.
+Dibawah ini adalah diagram batang yang memberikan informasi tentang jumlah kemunculan setiap produk dalam transaksi dengan hanya satu item.
 ``` bash
 single_items = data[basket_sizes == 1]["item_1"].value_counts()
 ax = single_items.head(15).plot.bar()
@@ -221,6 +225,7 @@ ax.set_ylabel("Number of times bought alone")
 
 _ = annotate_column_chart(ax)
 ```
+![Alt text](eda5.png)
 
 Selanjutnya kita akan membuat variabel baskets yang berisi tuple-tuple dari setiap baris dalam DataFrame 'data' yang memiliki ukuran keranjang lebih dari 1
 ``` bash
