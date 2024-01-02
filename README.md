@@ -257,10 +257,8 @@ for rule in sorted(one_to_one_rules, key=lambda rule: rule.lift):
 
 ## Evaluation
 
-Hasil analisis berdasarkan data transaksi yang ada adalah dengan menggunakan minimum support 1% (kuatnya kombinasi item tersebut dalam database) dan minimum confidence 30% (kuatnya hubungan antar item dalam aturan asosiasi) menghasilkan 115 aturan asosiasi. Salah satu contohnya
-yaitu jika konsumen membeli soup maka 56,1% (kepastian konsumen dalam
-membeli item) akan membeli mineral water.
+Hasil analisis berdasarkan data transaksi yang ada adalah dengan menggunakan minimum support 1% (kuatnya kombinasi item tersebut dalam database) dan minimum confidence 30% (kuatnya hubungan antar item dalam aturan asosiasi) menghasilkan 115 aturan asosiasi. Salah satu contohnya yaitu jika konsumen membeli soup maka 56,1% (kepastian konsumen dalam membeli item) akan membeli mineral water.
 
 ## Deployment
-
+Dalam analysis ini yang akan menghasilkannya yaitu eggs,shrimp,low fat yogurt,chocolate,cake,spaghetti,tomatoes,pancakes,milk,frozen vegetables,frozen vegetables,ground beef,olive oil,burgers,soup,ground beef.
 [Market Basket Analysis Menggunakan Algoritma Apriori](https://aappciationrulesuas.streamlit.app/).
